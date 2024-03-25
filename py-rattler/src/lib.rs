@@ -1,63 +1,19 @@
-mod about_json;
-mod channel;
-mod error;
-mod generic_virtual_package;
-mod index;
-mod linker;
-mod lock;
-mod match_spec;
-mod meta;
-mod nameless_match_spec;
-mod networking;
-mod package_name;
-mod paths_json;
-mod platform;
-mod prefix_paths;
-mod record;
-mod repo_data;
-mod shell;
-mod solver;
-mod version;
-mod virtual_package;
-
-mod index_json;
-mod run_exports_json;
-use about_json::PyAboutJson;
-use channel::{PyChannel, PyChannelConfig};
-use error::{
-    ActivationException, CacheDirException, ConvertSubdirException, DetectVirtualPackageException,
+use pyo3::prelude::*;
+use pyo3_rattler::{
+    get_rattler_version, py_fetch_repo_data, py_index, py_link, py_solve, ActivationException,
+    CacheDirException, ConvertSubdirException, DetectVirtualPackageException,
     EnvironmentCreationException, ExtractException, FetchRepoDataException,
     InvalidChannelException, InvalidMatchSpecException, InvalidPackageNameException,
     InvalidUrlException, InvalidVersionException, IoException, LinkException, ParseArchException,
-    ParsePlatformException, PyRattlerError, SolverException, TransactionException,
+    ParsePlatformException, PyAboutJson, PyActivationResult, PyActivationVariables, PyActivator,
+    PyArch, PyAuthenticatedClient, PyChannel, PyChannelConfig, PyEnvironment, PyFileMode,
+    PyGenericVirtualPackage, PyIndexJson, PyLockChannel, PyLockFile, PyLockedPackage, PyMatchSpec,
+    PyModule, PyNamelessMatchSpec, PyPackageHashes, PyPackageName, PyPatchInstructions, PyPathType,
+    PyPathsEntry, PyPathsJson, PyPlatform, PyPrefixPaths, PyPrefixPlaceholder, PyPypiPackageData,
+    PyPypiPackageEnvironmentData, PyRecord, PyRepoData, PyRunExportsJson, PyShellEnum,
+    PySparseRepoData, PyVersion, PyVirtualPackage, SolverException, TransactionException,
     VersionBumpException,
 };
-use generic_virtual_package::PyGenericVirtualPackage;
-use index_json::PyIndexJson;
-use lock::{
-    PyEnvironment, PyLockChannel, PyLockFile, PyLockedPackage, PyPackageHashes, PyPypiPackageData,
-    PyPypiPackageEnvironmentData,
-};
-use match_spec::PyMatchSpec;
-use nameless_match_spec::PyNamelessMatchSpec;
-use networking::{authenticated_client::PyAuthenticatedClient, py_fetch_repo_data};
-use package_name::PyPackageName;
-use paths_json::{PyFileMode, PyPathType, PyPathsEntry, PyPathsJson, PyPrefixPlaceholder};
-use prefix_paths::PyPrefixPaths;
-use repo_data::{patch_instructions::PyPatchInstructions, sparse::PySparseRepoData, PyRepoData};
-use run_exports_json::PyRunExportsJson;
-use version::PyVersion;
-
-use pyo3::prelude::*;
-
-use index::py_index;
-use linker::py_link;
-use meta::get_rattler_version;
-use platform::{PyArch, PyPlatform};
-use record::PyRecord;
-use shell::{PyActivationResult, PyActivationVariables, PyActivator, PyShellEnum};
-use solver::py_solve;
-use virtual_package::PyVirtualPackage;
 
 #[pymodule]
 fn rattler(py: Python<'_>, m: &PyModule) -> PyResult<()> {

@@ -88,6 +88,7 @@ netrc-rs = "0.1.2"
 nom = "7.1.3"
 num_cpus = "1.16.0"
 once_cell = "1.19.0"
+openssl = "0.10"
 ouroboros = "0.18.3"
 pathdiff = "0.2.1"
 pep440_rs = { version = "0.5.0" }
@@ -95,6 +96,8 @@ pep508_rs = { version = "0.4.2" }
 pin-project-lite = "0.2.13"
 plist = "1"
 purl = { version = "0.1.2", features = ["serde"] }
+pyo3 = { version = "0.19.0", default-features = false }
+pyo3-asyncio = { version = "0.19.0", default-features = false }
 quote = "1.0.35"
 rand = "0.8.5"
 reflink-copy = "0.1.15"
