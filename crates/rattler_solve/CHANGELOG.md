@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.23.0](https://github.com/mamba-org/rattler/compare/rattler_solve-v0.22.0...rattler_solve-v0.23.0) - 2024-05-22
+
+### Added
+- always store purls as a key in lock file ([#669](https://github.com/mamba-org/rattler/pull/669))
+- add solve strategies ([#660](https://github.com/mamba-org/rattler/pull/660))
+
+### Fixed
+- result grouped by subdir instead of channel ([#666](https://github.com/mamba-org/rattler/pull/666))
+
 ## [0.22.0](https://github.com/mamba-org/rattler/compare/rattler_solve-v0.21.2...rattler_solve-v0.22.0) - 2024-05-14
 
 ### Added

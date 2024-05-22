@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.23.2](https://github.com/mamba-org/rattler/compare/rattler_conda_types-v0.23.1...rattler_conda_types-v0.23.2) - 2024-05-22
+
+### Added
+- always store purls as a key in lock file ([#669](https://github.com/mamba-org/rattler/pull/669))
+- add solve strategies ([#660](https://github.com/mamba-org/rattler/pull/660))
+
 ## [0.23.1](https://github.com/mamba-org/rattler/compare/rattler_conda_types-v0.23.0...rattler_conda_types-v0.23.1) - 2024-05-14
 
 ### Added
