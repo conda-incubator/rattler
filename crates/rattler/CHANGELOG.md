@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.26.0](https://github.com/mamba-org/rattler/compare/rattler-v0.25.0...rattler-v0.26.0) - 2024-05-24
+
+### Other
+- create directories up front ([#533](https://github.com/mamba-org/rattler/pull/533))
+
 ## [0.25.0](https://github.com/mamba-org/rattler/compare/rattler-v0.24.1...rattler-v0.25.0) - 2024-05-14
 
 ### Added
