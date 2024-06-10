@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.25.3](https://github.com/mamba-org/rattler/compare/rattler_conda_types-v0.25.2...rattler_conda_types-v0.25.3) - 2024-06-10
+
+### Fixed
+- This fixes parsing of `ray[default,data] >=2.9.0,<3.0.0` ([#732](https://github.com/mamba-org/rattler/pull/732))
+
 ## [0.25.2](https://github.com/baszalmstra/rattler/compare/rattler_conda_types-v0.25.1...rattler_conda_types-v0.25.2) - 2024-06-04
 
 ### Added
