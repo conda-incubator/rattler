@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.22.19](https://github.com/conda-incubator/rattler/compare/rattler_lock-v0.22.18...rattler_lock-v0.22.19) - 2024-08-08
+
+### Other
+- update banner ([#808](https://github.com/conda-incubator/rattler/pull/808))
+
 ## [0.22.18](https://github.com/baszalmstra/rattler/compare/rattler_lock-v0.22.17...rattler_lock-v0.22.18) - 2024-08-06
 
 ### Other

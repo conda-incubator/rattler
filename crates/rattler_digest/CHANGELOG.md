@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1](https://github.com/conda-incubator/rattler/compare/rattler_digest-v1.0.0...rattler_digest-v1.0.1) - 2024-08-08
+
+### Fixed
+- use conda-incubator
+
+### Other
+- update banner ([#808](https://github.com/conda-incubator/rattler/pull/808))
+
 ## [0.19.5](https://github.com/conda-incubator/rattler/compare/rattler_digest-v0.19.4...rattler_digest-v0.19.5) - 2024-07-15
 
 ### Other

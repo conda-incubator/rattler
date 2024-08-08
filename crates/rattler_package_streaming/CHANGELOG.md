@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.22.2](https://github.com/conda-incubator/rattler/compare/rattler_package_streaming-v0.22.1...rattler_package_streaming-v0.22.2) - 2024-08-08
+
+### Fixed
+- use conda-incubator
+
+### Other
+- update banner ([#808](https://github.com/conda-incubator/rattler/pull/808))
+
 ## [0.22.1](https://github.com/baszalmstra/rattler/compare/rattler_package_streaming-v0.22.0...rattler_package_streaming-v0.22.1) - 2024-08-06
 
 ### Other
